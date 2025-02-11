@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+p{
+  margin: 5px 0; 
+  text-align: center;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.product {
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0px 4px 6px yellow;
+  text-align: center;
+  /* margin-top: 25px; */
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+.price {
+  font-weight: 700;
+  color: #28a745;
+}
+@media (max-width:768px) {
+  .product{
+    width: 45%;
+  }
+}
+@media (max-width:480px) {
+  .product{
+    width: 100%;
+  }
+}
